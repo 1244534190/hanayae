@@ -1,0 +1,62 @@
+{
+  "ssh_host": {
+    "description": "SSH 主机地址",
+    "type": "string",
+    "hint": "被控电脑的 IP 地址，如 192.168.1.100 或 Tailscale IP",
+    "default": ""
+  },
+  "ssh_port": {
+    "description": "SSH 端口",
+    "type": "int",
+    "hint": "SSH 服务端口，默认 22",
+    "default": 22
+  },
+  "ssh_username": {
+    "description": "SSH 用户名",
+    "type": "string",
+    "hint": "登录被控电脑的用户名",
+    "default": ""
+  },
+  "ssh_password": {
+    "description": "SSH 密码",
+    "type": "string",
+    "hint": "密码认证方式（与密钥二选一）",
+    "default": ""
+  },
+  "ssh_key_path": {
+    "description": "SSH 密钥路径",
+    "type": "string",
+    "hint": "私钥文件路径，如 ~/.ssh/id_rsa（与密码二选一）",
+    "default": ""
+  },
+  "agent_port": {
+    "description": "本地 Agent 端口",
+    "type": "int",
+    "hint": "被控电脑上 remote_agent.py 监听的端口",
+    "default": 8765
+  },
+  "auto_connect": {
+    "description": "自动连接",
+    "type": "bool",
+    "hint": "插件启动时自动建立 SSH 隧道连接",
+    "default": false
+  },
+  "screenshot_quality": {
+    "description": "截图质量",
+    "type": "int",
+    "hint": "JPEG 压缩质量 (1-100)，值越小文件越小",
+    "default": 75
+  },
+  "command_timeout": {
+    "description": "命令超时(秒)",
+    "type": "int",
+    "hint": "单条指令最长执行时间",
+    "default": 30
+  },
+  "allowed_users": {
+    "description": "允许使用的用户ID",
+    "type": "list",
+    "hint": "留空则所有人可用，填写用户ID可限制使用范围",
+    "default": []
+  }
+}
