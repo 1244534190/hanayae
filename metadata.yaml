@@ -3,7 +3,7 @@ display_name: 电脑控制
 desc: |
   # 电脑控制 (Computer Use)
 
-  通过 AstrBot 远程控制你的电脑。
+  让 bot 帮你操控电脑
 
   ## 功能
   - 截图查看电脑屏幕
@@ -27,7 +27,6 @@ desc: |
   - `/cu 状态` - 查看连接状态
   - `/cu 帮助` - 显示帮助
 
-  让bot帮你操控电脑
 version: 1.0.0
 author: hanayae
 repo: https://github.com/your-username/astrbot_plugin_computer_use
