@@ -27,8 +27,7 @@ desc: |
   - `/cu 状态` - 查看连接状态
   - `/cu 帮助` - 显示帮助
 
-  ## 开源
-  MIT License
+  让bot帮你操控电脑
 version: 1.0.0
-author: Computer Use Contributors
+author: hanayae
 repo: https://github.com/your-username/astrbot_plugin_computer_use
