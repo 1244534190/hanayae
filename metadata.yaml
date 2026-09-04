@@ -1,0 +1,34 @@
+name: astrbot_plugin_computer_use
+display_name: 电脑控制
+desc: |
+  # 电脑控制 (Computer Use)
+
+  通过 AstrBot 远程控制你的电脑。
+
+  ## 功能
+  - 截图查看电脑屏幕
+  - 鼠标点击、双击、右键
+  - 键盘输入文字、按键
+  - 滚动屏幕
+  - 鼠标拖拽
+  - 支持通过 SSH 隧道连接本地电脑
+
+  ## 架构
+  - **AstrBot 插件**: 运行在服务器上，接收聊天指令
+  - **本地 Agent**: 运行在被控电脑上，执行实际操作
+  - **SSH 隧道**: 服务器通过 SSH 端口转发安全连接本地 Agent
+
+  ## 使用
+  - `/cu 截图` - 截取屏幕
+  - `/cu 点击 x y` - 点击坐标
+  - `/cu 输入 文字` - 输入文字
+  - `/cu 按键 enter` - 按键
+  - `/cu 滚动 up 3` - 滚动屏幕
+  - `/cu 状态` - 查看连接状态
+  - `/cu 帮助` - 显示帮助
+
+  ## 开源
+  MIT License
+version: 1.0.0
+author: Computer Use Contributors
+repo: https://github.com/your-username/astrbot_plugin_computer_use
